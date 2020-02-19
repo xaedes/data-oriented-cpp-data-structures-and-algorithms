@@ -22,6 +22,13 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 // SOFTWARE.
 
+// grid based data index
+// Optimised for max distance neighborhood queries. Only a [-1,0,+1]^nDim 
+// neighborhood of the grid cells is considered, therefore set grid cell to max 
+// distance for maximal runtime performance.
+// O(num items) time and O(num items + num grid cells) memory
+// Works similar to IntGrouper, grouping items in groups (cells in this case).
+
 #include <functional> 
 #include <algorithm> 
 #include <vector> 
