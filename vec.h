@@ -10,7 +10,8 @@
 #endif
 
 #ifdef VEC_USE_OPENCV
-    typedef cv::Vec Vec;
+    using cv::Vec;
+    using cv::norm;
 #endif
 #ifdef VEC_USE_NATIVE
 #define ARITHMETIC_OPERATOR(OP) \
