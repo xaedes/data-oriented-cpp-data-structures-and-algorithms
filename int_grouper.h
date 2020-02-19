@@ -1,6 +1,13 @@
 #pragma once
 #include <vector>
 
+// Group a list of integers by its values in O(N) time and O(N+M) memory.
+//
+// Memory usage is linear to number of items plus maximum integer value / aka
+// group number. The resulting item order is stored in groupedIndices, which
+// contains indices into the given list of group numbers. The position of the
+// groups inside this array is stored in groupStarts and groupSizes.
+// groupPointers is only internally used and you can ignore it.
 class IntGrouper
 {
 public:
