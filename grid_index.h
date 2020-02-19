@@ -554,7 +554,6 @@ public:
     GridMeta<TValueType, TNumDimensions> gridMeta;
     int numItems;
     int seqNum;
-    friend class NeighborVisitor;
 };
 
 
